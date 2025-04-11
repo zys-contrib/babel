@@ -83,7 +83,7 @@
     "shelljs": "^0.8.5",
     "test262-stream": "^1.4.0",
     "typescript": "5.8.2",
-    "typescript-eslint": "8.26.1"
+    "typescript-eslint": "8.29.1"
   },
   "workspaces": [
     "codemods/*",
@@ -110,7 +110,7 @@
   "lint-staged": {
     "./Makefile.source.mjs": [
       "node ./scripts/pack-script.js --auto",
-      "git add Makefile.js"
+      "git add Makefile.mjs"
     ],
     "*.{js,cjs,mjs,ts,cts,mts}": [
       "eslint --format=codeframe --cache --cache-strategy=content"

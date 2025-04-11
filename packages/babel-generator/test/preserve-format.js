@@ -1,5 +1,5 @@
 import { parse } from "@babel/parser";
-import path from "path";
+import path from "node:path";
 import fixtures from "@babel/helper-fixtures";
 import * as babel from "@babel/core";
 import pluginTransformTypeScript from "@babel/plugin-transform-typescript";
@@ -38,7 +38,7 @@ const FAILURES = [
   "flow/iterator-inside-types/input.js",
   "flow/object-literal-types/input.js",
   "flow/opaque-type-alias/input.js",
-  "flow/parantheses/input.js",
+  "flow/parentheses/input.js",
   "flow/predicates/input.js",
   "flow/this-param/input.js",
   "flow/tuples/input.js",
